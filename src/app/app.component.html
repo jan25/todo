@@ -1,4 +1,17 @@
 
 
-on 17/09/2016
-Hello, I'm here tonight developing TodoApp on my own. Yay!
+<md-list *ngFor="let todo of todos">
+  <md-card-header>
+    <md-card-title-group>
+      <md-card-title>{{todo.title}}</md-card-title>
+      <md-card-title *ngIf="todo.deadline">Finish by {{todo.deadline}}</md-card-title>
+    </md-card-title-group>
+  </md-card-header>
+  <md-card-content>
+    <p>{{todo.description}}</p>
+  </md-card-content>
+  <md-card-actions>
+    <button *ngIf="todo.isDone" md-button>Done</button>
+    <button *ngIf="todo.isDone == false" md-button>Undone</button>
+  </md-card-actions>
+</md-list>
