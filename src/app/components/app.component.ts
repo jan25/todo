@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {Todo} from './models/todo';
-import {LocalDB} from './services/local-db';
+import {Todo} from '../models/todo';
+import {LocalDB} from '../services/local-db';
 
 @Component({
   selector: 'app-root',

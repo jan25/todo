@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AsyncLocalStorageModule} from 'angular-async-local-storage';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app.component';
 import {MdImportsModule} from './custom-modules/md-imports.module';
 
 const IMPORTS = [
