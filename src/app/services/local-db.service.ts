@@ -2,7 +2,7 @@
 
 import {Injectable} from '@angular/core';
 import {AsyncLocalStorage, AsyncLocalStorageModule} from 'angular-async-local-storage';
-import {Todo} from '../models/todo';
+import {Todo} from '../models/todo.model';
 
 @Injectable()
 export class LocalDB {
