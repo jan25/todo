@@ -5,13 +5,15 @@ import { AsyncLocalStorageModule} from 'angular-async-local-storage';
 
 import { AppComponent } from './components/app.component';
 import {MdImportsModule} from './custom-modules/md-imports.module';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 const IMPORTS = [
   BrowserModule,
   BrowserAnimationsModule,
   AsyncLocalStorageModule,
 
-  MdImportsModule
+  MdImportsModule,
+  FlexLayoutModule
 ];
 
 @NgModule({
