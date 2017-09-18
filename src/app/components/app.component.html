@@ -1,17 +1,25 @@
 
 
-<md-list *ngFor="let todo of todos">
-  <md-card-header>
-    <md-card-title-group>
-      <md-card-title>{{todo.title}}</md-card-title>
-      <md-card-title *ngIf="todo.deadline">Finish by {{todo.deadline}}</md-card-title>
-    </md-card-title-group>
-  </md-card-header>
-  <md-card-content>
-    <p>{{todo.description}}</p>
-  </md-card-content>
-  <md-card-actions>
-    <button *ngIf="todo.isDone" md-button>Done</button>
-    <button *ngIf="todo.isDone == false" md-button>Undone</button>
-  </md-card-actions>
-</md-list>
+<div class="left-panel">
+
+</div>
+<div class="todo-list">
+  <md-list *ngFor="let todo of todos">
+      <md-card>
+        <md-card-header>
+          <md-card-title-group>
+            <md-card-title>{{todo.title}}</md-card-title>
+            <md-card-title *ngIf="todo.deadline">Finish by {{todo.deadline}}</md-card-title>
+          </md-card-title-group>
+        </md-card-header>
+        <md-card-content>
+          <p>{{todo.description}}</p>
+        </md-card-content>
+        <md-card-actions>
+          <button *ngIf="todo.isDone" md-raised-button color="primary">Done</button>
+          <button *ngIf="todo.isDone == false" md-raised-button color="warn">Undone</button>
+        </md-card-actions>
+      </md-card>
+  </md-list>
+</div>
+

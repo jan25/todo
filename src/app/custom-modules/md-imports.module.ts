@@ -1,10 +1,13 @@
 
 
 import {NgModule} from '@angular/core';
-import {MdListModule} from '@angular/material';
+import {MdDialogModule, MdListModule, MdButtonModule, MdCardModule} from '@angular/material';
 
 const IMPORTS = [
-  MdListModule
+  MdListModule,
+  MdCardModule,
+  MdDialogModule,
+  MdButtonModule
 ];
 
 @NgModule({
