@@ -52,4 +52,10 @@ export class LocalDB {
     return todos;
   }
 
+  addTodo(todo: Todo) {
+    let todos = this.getAll();
+    todos.push(todo);
+    return this.storage.setItem('todos', todos);
+  }
+
 }

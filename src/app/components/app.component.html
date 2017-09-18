@@ -1,10 +1,13 @@
-
-
-<div class="left-panel" fxFlex="20">
-
+<div class="toolbar-div" fxLayoutWrap>
+  <md-toolbar color="primary" fxLayout="column" fxLayoutAlign="center">
+    <span>My Todos</span>
+  </md-toolbar>
 </div>
-<div class="todo-list" fxFlex="50" fxLayout="column" fxLayoutAlign="center">
-  <md-list *ngFor="let todo of todos">
+<div class="container">
+  <div class="left-panel" fxFlex="20">
+  </div>
+  <div class="todo-list" fxFlex="50" fxLayout="column" fxLayoutAlign="center">
+    <md-list *ngFor="let todo of todos">
       <md-card>
         <md-card-header>
           <md-card-title-group>
@@ -20,18 +23,21 @@
           <button *ngIf="todo.isDone == false" md-raised-button color="warn">Undone</button>
         </md-card-actions>
       </md-card>
-  </md-list>
-</div>
-<div class="right-panel" fxFlex>
-  <div class="notifications-panel" fxLayout="column" fxLayoutAlign="space-between center">
-    <md-card>
-      <md-card-header>Notification 1</md-card-header>
-      <md-card-content>this is a notification first</md-card-content>
-    </md-card>
+    </md-list>
   </div>
-
-  <button class="md-fab-bottom-right" md-fab color="primary">
-    <md-icon>format_list_bulleted</md-icon>
-  </button>
+  <div class="right-panel" fxFlex>
+    <div class="notifications-panel" fxLayout="column" fxLayoutAlign="space-between center">
+      <md-card>
+        <md-card-header>Notification 1</md-card-header>
+        <md-card-content>this is a notification first</md-card-content>
+      </md-card>
+    </div>
+    <button class="md-fab-bottom-right" md-fab color="primary">
+      <md-icon>format_list_bulleted</md-icon>
+    </button>
+  </div>
 </div>
+
+
+
 

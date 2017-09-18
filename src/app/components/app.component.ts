@@ -12,10 +12,19 @@ export class AppComponent {
 
   todos: Todo[];
 
+  todo: Todo;
+
+  title: string;
+
+
   constructor(private db: LocalDB) { }
 
   ngOnInit() {
     this.todos = this.db.getAll();
+  }
+
+  addTodo() {
+
   }
 
 }
